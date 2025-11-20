@@ -1,0 +1,297 @@
+<!-- Indica al navegador que este documento es HTML5 -->
+<!DOCTYPE html>
+<!-- Etiqueta raíz del documento, con idioma principal español -->
+<html lang="es">
+<head>
+    <!-- Define la codificación de caracteres como UTF‑8 (permite acentos, ñ, etc.) -->
+    <meta charset="UTF-8" />
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Hello, world!</title>
+    <!-- Hace que el diseño sea responsive (se adapta al ancho del dispositivo) -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- Descripción de la página para buscadores (SEO) -->
+    <meta name="description" content="" />
+    <!-- Resetea/normaliza estilos por defecto de los navegadores -->
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1/modern-normalize.min.css" rel="stylesheet">
+    <!-- Importa el CSS de Bootstrap 5 desde CDN para usar su sistema de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Enlaza tu hoja de estilos propia -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Icono pequeño (32x32) que se muestra en la pestaña del navegador -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <!-- Versión más pequeña del favicon (16x16) -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- Icono para cuando se guarda la web como app en dispositivos Apple -->
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Favicon en formato SVG escalable -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Color del tema usado por algunos navegadores (ej. barra superior en móvil) -->
+    <meta name="theme-color" content="#1cab68">
+</head>
+<body>
+    <!-- Encabezado principal de la página -->
+    <header>
+        <!-- Título visible en la página -->
+        <h1>Hello, world!</h1>
+    </header>
+
+    <!-- Barra de navegación usando clases de Bootstrap -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- Contenedor fluido Bootstrap para ajustar el contenido a todo el ancho -->
+        <div class="container-fluid">
+        <!-- Logotipo o nombre de la marca en la navbar -->
+        <a class="navbar-brand" href="#">Navbar</a>
+        <!-- Botón que aparece en pantallas pequeñas para mostrar/ocultar el menú -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Icono del botón hamburguesa -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Contenedor colapsable del menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- Lista de enlaces de navegación -->
+            <ul class="navbar-nav">
+            <!-- Elemento de menú de navegación -->
+            <li class="nav-item">
+                <!-- Enlace activo (página actual) -->
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <!-- Otro elemento de menú -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <!-- Otro elemento de menú -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <!-- Elemento de menú con submenú desplegable -->
+            <li class="nav-item dropdown">
+                <!-- Enlace que abre el dropdown -->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+                </a>
+                <!-- Lista del menú desplegable -->
+                <ul class="dropdown-menu">
+                <!-- Opción del menú desplegable -->
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <!-- Otra opción -->
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <!-- Otra opción -->
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div> <!-- Fin .collapse.navbar-collapse -->
+        </div> <!-- Fin .container-fluid -->
+    </nav>
+
+    <!-- Párrafo de texto de ejemplo -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. </p>
+
+    <!-- Imagen de ejemplo obtenida desde un servicio de placeholder -->
+    <img src="https://via.placeholder.com/800x600/" alt="Imagen de ejemplo">
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Sección vacía (puedes añadir contenido más adelante) -->
+        <section></section>
+        <!-- Otra sección -->
+        <section></section>
+        <!-- Otra sección -->
+        <section></section>
+    </main>
+
+    <!-- Formulario con distintos campos de entrada -->
+    <form action="#">
+        <!-- Etiqueta para el campo de nombre con estilo de Bootstrap -->
+        <label for="firstName" class="form-label">First name:</label><br>
+        <!-- Input de texto para el nombre con clase de Bootstrap -->
+        <input type="text" class="form-control" name="firstName" value="John"><br>
+        <!-- Etiqueta para el apellido -->
+        <label for="lastName" class="form-label">Last name:</label><br>
+        <!-- Input de texto para el apellido -->
+        <input type="text" class="form-control" name="lastName" value="Doe"><br>
+        <!-- Etiqueta para el email -->
+        <label for="email" class="form-label">Email:</label><br>
+        <!-- Campo de tipo email (valida formato de correo) -->
+        <input type="email" class="form-control" name="email" value="example@example.com"><br>
+        <!-- Etiqueta para el teléfono -->
+        <label for="phone" class="form-label">Phone:</label><br>
+        <!-- Campo de tipo teléfono -->
+        <input type="tel" class="form-control" name="phone" value="555-555-5555"><br>
+        <!-- Botón para enviar el formulario -->
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+
+    <!-- Acordeón Bootstrap (contenedor principal) -->
+    <div class="accordion" id="accordionExample">
+        <!-- Primer elemento del acordeón -->
+        <div class="accordion-item">
+        <!-- Cabecera del primer panel del acordeón -->
+        <h2 class="accordion-header" id="headingOne">
+            <!-- Botón que al hacer click muestra/oculta el contenido 1 -->
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Section Heading 1
+            </button>
+        </h2>
+        <!-- Contenedor colapsable del contenido 1, visible por defecto (.show) -->
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <!-- Contenido interno del panel 1 -->
+            <div class="accordion-body">
+            Accordion Section Content 1
+            </div>
+        </div>
+        </div>
+        <!-- Segundo elemento del acordeón -->
+        <div class="accordion-item">
+        <!-- Cabecera del segundo panel -->
+        <h2 class="accordion-header" id="headingTwo">
+            <!-- Botón que controla el panel 2 (inicio colapsado) -->
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Section Heading 2
+            </button>
+        </h2>
+        <!-- Contenedor colapsable del contenido 2 -->
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <!-- Contenido interno del panel 2 -->
+            <div class="accordion-body">
+            Accordion Section Content 2
+            </div>
+        </div>
+        </div>
+        <!-- Tercer elemento del acordeón -->
+        <div class="accordion-item">
+        <!-- Cabecera del tercer panel -->
+        <h2 class="accordion-header" id="headingThree">
+            <!-- Botón que controla el panel 3 (inicio colapsado) -->
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Section Heading 3
+            </button>
+        </h2>
+        <!-- Contenedor colapsable del contenido 3 -->
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <!-- Contenido interno del panel 3 -->
+            <div class="accordion-body">
+            Accordion Section Content 3
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Carrusel Bootstrap con efectos de diapositivas -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <!-- Indicadores (puntos) para saltar a cada diapositiva -->
+        <div class="carousel-indicators">
+        <!-- Botón indicador para la primera diapositiva (activa) -->
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <!-- Botón indicador para la segunda diapositiva -->
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <!-- Botón indicador para la tercera diapositiva -->
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- Contenedor de las diapositivas -->
+        <div class="carousel-inner">
+        <!-- Primera diapositiva, marcada como activa -->
+        <div class="carousel-item active">
+            <!-- Imagen a pantalla completa (w-100) -->
+            <img src="https://via.placeholder.com/1200x600/" class="d-block w-100" alt="">
+            <!-- Texto superpuesto sobre la imagen, visible solo en pantallas medianas en adelante -->
+            <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            </div>
+        </div>
+        <!-- Segunda diapositiva -->
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/1200x600/" class="d-block w-100" alt="">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+            </div>
+        </div>
+        <!-- Tercera diapositiva -->
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/1200x600/" class="d-block w-100" alt="">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            </div>
+        </div>
+        </div>
+        <!-- Botón para ir a la diapositiva anterior -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <!-- Icono de flecha izquierda -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!-- Texto accesible solo para lectores de pantalla -->
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <!-- Botón para ir a la siguiente diapositiva -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <!-- Icono de flecha derecha -->
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <!-- Texto accesible solo para lectores de pantalla -->
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Tabla con clases de Bootstrap para dar estilo -->
+    <table class="table">
+        <!-- Primera fila de la tabla -->
+        <tr>
+        <td>Row 1, Column 1</td>
+        <td>Row 1, Column 2</td>
+        <td>Row 1, Column 3</td>
+        </tr>
+        <!-- Segunda fila de la tabla -->
+        <tr>
+        <td>Row 2, Column 1</td>
+        <td>Row 2, Column 2</td>
+        <td>Row 2, Column 3</td>
+        </tr>
+    </table>
+
+    <!-- Aviso de cookies fijo en la parte inferior de la pantalla -->
+    <div id="cookie-notice" class="position-fixed bottom-0 w-100 p-2 text-bg-dark">
+        <!-- Texto explicando el uso de cookies con enlace a la política de privacidad -->
+        <p>This website uses cookies so that we can provide you with the best website experience. By clicking “I Accept” you acknowledge the use of cookies and to our <a href="#"><u>Privacy Policy</u></a>.</p>
+        <!-- Botón que el usuario pulsa para aceptar las cookies -->
+        <button type="button" id="i-accept" class="btn btn-primary">I Accept</button>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <!-- Texto pequeño con el año actual generado por JavaScript y el nombre de la empresa -->
+        <small>© <script>document.write(new Date().getFullYear())</script> Your company name. All Rights Reserved.</small>
+    </footer>
+
+    <!-- Carga la librería jQuery desde CDN para usarla en los scripts siguientes -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <!-- Carga el bundle de JavaScript de Bootstrap (incluye Popper, etc.) para que funcionen navbar, acordeón, carrusel... -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <!-- Bloque de JavaScript incrustado en la propia página -->
+    <script type="text/javascript">
+        // Función autoejecutable (IIFE) que recibe jQuery como parámetro '$'
+        (function($){
+        // Asigna un manejador de evento 'click' al botón con id 'i-accept'
+        $('#i-accept').on('click', function() {   
+            // Comprueba si todavía no se ha guardado en localStorage que se oculte la barra de cookies
+            if(localStorage.hidecookiebar !== '1') {
+            // Oculta el div del aviso de cookies
+            $('#cookie-notice').hide();
+            // Guarda en localStorage la preferencia de no mostrar más la barra ('1' = ocultar)
+            localStorage.hidecookiebar='1';
+            }  
+        });
+        // Cuando se carga la página, comprueba si en localStorage ya está marcada la preferencia
+        if(localStorage.hidecookiebar == '1') {
+            // Si ya aceptó anteriormente, oculta directamente el aviso de cookies
+            $('#cookie-notice').hide();
+        };
+        // Ejecuta la función pasándole 'jQuery' como argumento para el parámetro '$'
+        })(jQuery);
+    </script>
+
+    <!-- Enlaza un archivo JavaScript externo donde puedes añadir más lógica propia -->
+    <script src="app.js"></script>
+</body>
+</html>
