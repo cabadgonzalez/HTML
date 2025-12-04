@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Tarea 4: Formularios Web en HTML</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Página de ejemplos: Texto en HTML">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="header, h1, hr, nav, h2, ul, li, a, h3, footer">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@christianabad">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplos teórico-prácticos de Formularios en HTML</h1>
+        <p><a href="index.html">👈 Volver atrás</a></p>
+        <hr />
+    </header>
+
+    <main>
+        <h2>Información sobre el producto</h2>
+        <form action=""name="registro" method="post" autocomplete="off" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos básicos</legend>
+
+                <p>
+                    <label for="name">Nombre</label><br>
+                    <input type="text" id="name" name="Nombre" placeholder="Nombre" autocomplete="off" required maxlength="50"/>   
+                </p>
+
+                <p>
+                    <label for="description">Descripción</label><br>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                </p>
+
+                <p>
+                    <label for="photo">Foto</label>
+                    <input type="file" id="photo" name="photo">
+                </p>
+
+                <p>
+                    <input type="checkbox" name="count" id="count">
+                    <label for="count">Añadir contador de visitas</label>
+                </p>
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos económicos</legend>
+                
+                <p>
+                    <label for="money">Precio</label>
+                    <input type="number" id="money" name="moneyphoto">
+                    <label for="money">€</label>
+
+                    <label for="task">Impuestos</label>
+                    <select name="task" id="task">
+                        <option value="-">-</option>
+                        <option value="4">4</option>
+                        <option value="7">7</option>
+                        <option value="16">16</option>
+                        <option value="25">25</option>
+                    </select>
+                </p>
+
+                <p>
+                    Promoción <br>
+                    <p>
+                        <input type="radio" name="promo" value="" id="ninguno">
+                        <label for="ninguno">Ninguno</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="promo" value="" id="ninguno">
+                        <label for="ninguno">Transporte gratuito</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="promo" value="" id="ninguno">
+                        <label for="ninguno">Descuento 5%</label>
+                    </p>
+                </p>
+                
+            </fieldset>
+        </form>
+    </main>
+
+    <hr>
+    <footer>
+        © ConquerBlocks 2025 - Todos los derechos reservados
+    </footer>
+</body>
+
+</html>

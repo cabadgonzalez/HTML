@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Tarea 2: Formularios Web en HTML</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Página de ejemplos: Texto en HTML">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="header, h1, hr, nav, h2, ul, li, a, h3, footer">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@christianabad">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplos teórico-prácticos de Formularios en HTML</h1>
+        <p><a href="index.html">👈 Volver atrás</a></p>
+        <hr />
+    </header>
+
+    <main>
+        <h2>Formulario Estructurado</h2>
+        <form action=""name="registro" method="get" autocomplete="off" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <p>
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="Nombre" placeholder="Nombre" autocomplete="off" required maxlength="50"/><br />
+                </p>
+            
+                <p>
+                    <label for="lastname">Apellidos:</label><br>
+                    <input type="text" id="lastname" name="Apellidos" placeholder="Apellidos" autocomplete="off" required maxlength="50"/><br />
+                </p>
+
+                <p>
+                    <label for="dni">DNI:</label><br>
+                    <input type="text" id="dni" name="dni" placeholder="XXXXXXXXX" autocomplete="off" required maxlength="9"/><br />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de Conexión</legend>
+
+                <p>
+                    <label for="name">Nombre de usuario:</label><br>
+                    <input type="text" id="name" name="Nombre" placeholder="Nombre" autocomplete="off" required maxlength="50"/><br />
+                </p>
+            
+                <p>
+                    <label for="passwd1">Contraseña:</label>
+                    <input type="text" id="passwd1" name="passwd1" placeholder="Contraseña" autocomplete="off" required maxlength="50"/><br />
+                </p>
+
+                <p>
+                    <label for="passwd2">Repite Contraseña:</label>
+                    <input type="text" id="passwd2" name="passwd2" placeholder="Contraseña" autocomplete="off" required maxlength="50"/><br />
+                </p>
+            </fieldset>
+
+            <p>
+                <button>Enviar</button>
+            </p>
+        
+            <p>
+                <input type="reset" value="Borrar el formulario">
+            </p>
+        </form>
+        
+    </main>
+
+    <hr>
+    <footer>
+        © ConquerBlocks 2025 - Todos los derechos reservados
+    </footer>
+</body>
+
+</html>

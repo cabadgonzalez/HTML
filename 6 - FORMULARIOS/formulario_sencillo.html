@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Formularios en HTML</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Página de ejemplos: Texto en HTML">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="header, h1, p, a, main, h1, form, input, p, button, hr, footer">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@christianabad">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplos teórico-prácticos de Formularios en HTML</h1>
+        <p><a href="index.html">👈 Volver atrás</a></p>
+        <hr />
+    </header>
+
+    <main>
+        <h1>Formulario sencillo</h1>
+        <form action="/registrar-cliente/" name="registro" method="get" autocomplete="off" enctype="multipart/form-data">
+            <input type="hidden" name="company" value="ConquerBlocks">
+            <p>
+                Nombre 
+                <input type="text" name="nombre" placeholder="José" size="15" autocomplete="off">
+            </p>
+            <p>
+                Apellidos
+                <input type="text" name="apellidos" placeholder="Pérez López" size="25" autocomplete="off"><br />
+            </p>
+            <p>
+                País
+                <input type="text" name="pais" size="25" autocomplete="off"><br />
+            </p>
+            <p>
+                Edad
+                <input type="number" name="edad" min="0" max="100" step=".5">
+            </p>
+            <p>
+                Email
+                <input type="email" name="email">
+            </p>
+            <p>
+                Contraseña
+                <input type="password" name="clave">
+            </p>
+            <p>
+                Indica tu página web
+                <input type="url" name="url">
+            </p>
+            <p>
+                Danos tu foto
+                <input type="file" name="foto">
+            </p>
+            
+            <button>Enviar</button>
+            <input type="reset" value="Borrar el formulario">
+        </form>
+
+    </main>
+
+    <hr>
+    <footer>
+        © ConquerBlocks 2025 - Todos los derechos reservados
+    </footer>
+</body>
+
+</html>

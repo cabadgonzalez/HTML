@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Tarea 1: Formularios Web en HTML</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Página de ejemplos: Texto en HTML">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="header, h1, hr, nav, h2, ul, li, a, h3, footer">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@christianabad">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplos teórico-prácticos de Formularios en HTML</h1>
+        <p><a href="index.html">👈 Volver atrás</a></p>
+        <hr />
+    </header>
+    
+    <main>
+        <form action="" name="registro" method="get" autocomplete="off" enctype="multipart/form-data">
+            <h2>Formulario de Registro - Mi Web</h2>
+            <hr>
+
+                <p>
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="Nombre" placeholder="Nombre" autocomplete="off" required maxlength="50"/><br />
+                </p>
+            
+                <p>
+                    <label for="lastname">Apellidos:</label><br>
+                    <input type="text" id="lastname" name="Apellidos" placeholder="Apellidos" autocomplete="off" required maxlength="50"/><br />
+                </p>
+        
+                <p>
+                <input type="radio" name="sexo" value="H" id="man">
+                <label for="man">Hombre</label>
+
+                <input type="radio" name="sexo" value="M" id="woman">
+                <label for="woman">Mujer</label>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="Email" placeholder="Email" autocomplete="off" required maxlength="50"/><br />
+                </p>
+
+                <p>
+                    <label for="poblacion">Población:</label>
+                    <select id="poblacion" name="poblacion">
+                        <option value="A">Alicante</option>
+                        <option value="M">Madrid</option>
+                        <option value="V">Valencia</option>
+                        <option value="S">Sevilla</option>
+                        <option value="Z">Zaragoza</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="description">Descripción</label><br>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="news" id="news" checked>
+                    <label for="news">Deseo recibir información sobre novedades y ofertas</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="privacy" id="privacy" required>
+                    <label for="privacy">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+                </p>
+
+                <p>
+                    <button>Enviar</button>
+                </p>
+            
+            <input type="reset" value="Borrar el formulario">
+        </form>
+    </main>
+
+    <hr>
+    <footer>
+        © ConquerBlocks 2025 - Todos los derechos reservados
+    </footer>
+</body>
+
+</html>
